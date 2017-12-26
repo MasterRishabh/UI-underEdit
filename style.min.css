@@ -733,7 +733,7 @@ label, .label {
 }
 
 .one-half, .two-quarters, .three-sixths, .four-eighths, .five-tenths, .six-twelfths {
-    width: 50%
+    width: 100%
 }
 
 .one-third, .two-sixths, .four-twelfths, .intro .contact-form input[type="email"], .intro .contact-form textarea {
@@ -1903,7 +1903,7 @@ p:empty {
 }
 
 .intro .about__picture {
-    text-align: center
+    text-align: right
 }
 
 .intro .about__me__picture {
