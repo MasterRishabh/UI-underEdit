@@ -1,0 +1,2 @@
+use margin-left on first div of body as style="margin-left:some px"
+there is css class 'align' in style.min.css remove margin-left proprety
