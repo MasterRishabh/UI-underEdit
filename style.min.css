@@ -1822,8 +1822,7 @@ p.lead+p {
 
 .align {
     margin: 0 auto;
-    /*self added*/
-    margin-left: 2em;
+  
     max-width: 1024px
 }
 

@@ -2,6 +2,8 @@
 <html>
 
 <head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, minimal-ui, initial-scale=1, minimum-scale=1, user-scalable = no">
 	<meta name="apple-touch-fullscreen" content="yes" />
@@ -50,12 +52,15 @@
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
 	 crossorigin="anonymous">
-	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
-	 crossorigin="anonymous"></script>
+
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
 	 crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
 	 crossorigin="anonymous"></script>
+
+
+
+
 </head>
 
 <body>
@@ -63,16 +68,30 @@
 		<div class="col-sm-4">
 
 			<div class="row">
-			
-			<figure class="snip0057 blue">
-				<figcaption>
-				  <h2>Tiffany <span>Case</span></h2>
-				  <p>That's the whole problem with science. You've got a bunch of empiricists trying to describe things of unimaginable wonder.</p>
-				  <div class="icons"><a href="#"><i class="ion-ios-home"></i></a><a href="#"><i class="ion-ios-email"></i></a><a href="#"><i class="ion-ios-telephone"></i></a></div>
-				</figcaption>
-				<div class="image"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample3.jpg" alt="sample3"/></div>
-				<div class="position">Software Engineer</div>
-			  </figure>
+
+				<figure class="snip0057 blue">
+					<figcaption>
+						<h2>Health
+							<span>Insurance 1</span>
+						</h2>
+						<p>The most demanding policy in the market.</p>
+						<div class="icons">
+							<a href="#">
+								<i class="ion-ios-home"></i>
+							</a>
+							<a href="#">
+								<i class="ion-ios-email"></i>
+							</a>
+							<a href="#">
+								<i class="ion-ios-telephone"></i>
+							</a>
+						</div>
+					</figcaption>
+					<div class="image">
+						<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample3.jpg" alt="sample3" />
+					</div>
+					<div class="position">Platinum Health Insurance</div>
+				</figure>
 
 
 			</div>
@@ -83,59 +102,73 @@
 
 
 			<div class="row">
-			
+
 				<figure class="snip0057 red">
 					<figcaption>
-					  <h2>Victoria <span>Pena</span></h2>
-					  <p>A voice crackles in Calvin's radio: "Enemy fighters at two o'clock!" "Roger. What should I do until then?"</p>
-					  <div class="icons"><a href="#"><i class="ion-ios-home"></i></a><a href="#"><i class="ion-ios-email"></i></a><a href="#"><i class="ion-ios-telephone"></i></a></div>
+						<h2>Health
+							<span>Insurance 2</span>
+						</h2>
+						<p>Second most demanding policy available in the market for health insurance.</p>
+						<div class="icons">
+							<a href="#">
+								<i class="ion-ios-home"></i>
+							</a>
+							<a href="#">
+								<i class="ion-ios-email"></i>
+							</a>
+							<a href="#">
+								<i class="ion-ios-telephone"></i>
+							</a>
+						</div>
 					</figcaption>
-					<div class="image"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample4.jpg" alt="sample4"/></div>
-					<div class="position">Illustrator</div>
-				  </figure>
-			
-			
+					<div class="image">
+						<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample4.jpg" alt="sample4" />
+					</div>
+					<div class="position">Gold Health Insurance</div>
+				</figure>
+
+
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<div class="row">
+				<div class="col" ontouchstart="this.classList.toggle('hover');">
+					<div class="container">
+						<div id="fimg" class="front" style="background-image: url(https://unsplash.it/500/500/)">
+							<div class="inner">
+								<p>News</p>
+								<span id="titleFeed">News Title</span>
+							</div>
+						</div>
+						<div class="back">
+							<div class="inner">
+								<p id="bodyFeed1">Get the latest happening in the world of Insurance.</p>
+							</div>
+						</div>
+					</div>
 				</div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-			  <div class="row">
-						  <div class="col" ontouchstart="this.classList.toggle('hover');">
-							  <div class="container">
-								  <div class="front" style="background-image: url(https://unsplash.it/500/500/)">
-									  <div class="inner">
-										  <p>Diligord</p>
-							<span>Lorem ipsum</span>
-									  </div>
-								  </div>
-								  <div class="back">
-									  <div class="inner">
-										<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
-									  </div>
-								  </div>
-							  </div>
-						  </div>
-						  
-</div>
+			</div>
 
 
 
@@ -169,8 +202,6 @@
 
 
 
-
-			  
 
 
 		</div>
@@ -190,6 +221,26 @@
 							<div class="chat__intro__scroll">
 								Scroll, if you want to know what's happening ⇣
 							</div>
+
+
+
+							<ol id="m" class="cui__list">
+									<li class="cui__list__item">
+										<div class="cui__bubble cui__bubble--slideIn cui__bubble--fade">Hey, welcome back fkjklvjfkjvkljfkljklfjkljklfjgkljflkjflkjl!</div>
+									</li>
+		
+		
+								</ol>
+								<div class="cui__responses">
+									<div class="cui__bubble cui__bubble--response" style="transform: translate3d(0px, 0px, 0px); opacity: 1;" onclick="addMsg()">Suggestion</div>
+									<div class="cui__bubble cui__bubble--response" style="transform: translate3d(0px, 0px, 0px); opacity: 1;"
+									 onclick="addMsg()">Second Question</div>
+								</div>
+
+
+
+
+
 						</div>
 					</div>
 				</section>
@@ -209,7 +260,7 @@
 		</div>
 	</div>
 
-	
+
 
 	<div class="page">
 		<div class="intro">
@@ -288,7 +339,7 @@
 	<!--[if gt IE 9]><!-->
 	<!--   <script src="https://azumbrunnen.me/wp-content/themes/azumbrunnen/app_dev/vendor/requirejs/require.js" data-main="https://azumbrunnen.me/wp-content/themes/azumbrunnen/app_dev/main.js"></script>
  -->
-	<script src="azumbrunnen.js"></script>
+	<!--script src="azumbrunnen.js"></script-->
 	<!--<![endif]-->
 
 
