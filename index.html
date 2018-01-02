@@ -59,7 +59,39 @@
 	 crossorigin="anonymous"></script>
 
 
+<style>
+li.restored-item {
+    animation: 
+        openspace 0.3s ease forwards, 
+        restored-item-animation 0.3s 0.3s cubic-bezier(0, 0.8, 0.32, 1.07) forwards;
+}
+/*
+    Snippet @keyframe openspace source: http://css-tricks.com/transitional-interfaces-coded/
+*/
+@keyframes openspace {
+    to {
+        height: auto;
+    }
+}
+ 
+@keyframes restored-item-animation {
+    0% {
+        opacity: 0;
+        transform: translateY(600px) rotateZ(90deg);
+    }
+ 
+    10% {
+        opacity: 1;
+        transform: translateY(600px) rotateZ(90deg);
+    }
+ 
+    100% {
+        opacity: 1;
+        transform: rotateZ(0);
+    }
+}
 
+</style>
 
 </head>
 
@@ -231,7 +263,7 @@
 		
 		
 								</ol>
-								<div class="cui__responses">
+								<div id="suggestion" class="cui__responses">
 									<div class="cui__bubble cui__bubble--response" style="transform: translate3d(0px, 0px, 0px); opacity: 1;" onclick="addMsg()">Suggestion</div>
 									<div class="cui__bubble cui__bubble--response" style="transform: translate3d(0px, 0px, 0px); opacity: 1;"
 									 onclick="addMsg()">Second Question</div>
