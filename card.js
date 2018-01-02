@@ -1,10 +1,15 @@
 
 function addMsg() {
 
-
-    var msg = '<li class="cui__list__item"><div class="cui__bubble cui__bubble--response" style="transform: translate3d(0px, 0px, 0px); opacity: 1;">Shoot!</div></li>' +
-        '<li class="cui__list__item"><div class="cui__bubble cui__bubble--slideIn cui__bubble--fade">Hey, welcome back!</div></li>';
+$('#suggestion').hide();
+    var msg = '<li class="restored-item cui__list__item"><div class="cui__bubble cui__bubble--response" style="transform: translate3d(0px, 0px, 0px); opacity: 1; ">Shoot!</div></li>';
+       
     $("ol").append(msg);
+
+$("ol").delay(8000).append('<li class="restored-item cui__list__item"><div class="cui__bubble cui__bubble--slideIn cui__bubble--fade" style="display: block;">Hey, welcome back!</div></li>');
+
+
+$('#suggestion').slideDown( "slow" );
 
 }
 
