@@ -13,6 +13,22 @@ $('#suggestion').slideDown( "slow" );
 
 }
 
+function keyMsg() {
+    var node = document.getElementById("question");
+node.addEventListener('keydown', function(event) {
+    if (event.key === "Enter") {
+        addMsg();
+    }
+});
+}
+
+
+$("#question").keyup(function (e) {
+    if (e.keyCode == 13) {
+        addMsg();
+    }
+});
+
 
 
 $(document).ready(function () {
