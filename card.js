@@ -2,32 +2,47 @@
 function addMsg() {
 
 $('#suggestion').hide();
-    var msg = '<li class="restored-item cui__list__item"><div class="cui__bubble cui__bubble--response" style="transform: translate3d(0px, 0px, 0px); opacity: 1; ">Shoot!</div></li>';
-       
+    var msg = '<li class="restored-item cui__list__item"><div class="cui__bubble cui__bubble--response" style="transform: translate3d(0px, 0px, 0px); opacity: 1">Shoot!</div></li>';
+    
+    //$('.my_div_r').style='transform: translate3d(0px, 0px, 0px); opacity: 1;';
     $("ol").append(msg);
 
-$("ol").delay(8000).append('<li class="restored-item cui__list__item"><div class="cui__bubble cui__bubble--slideIn cui__bubble--fade" style="display: block;">Hey, welcome back!</div></li>');
+$("ol").append('<li class="restored-item cui__list__item"><div class="my_div">...</div></li>');
+$('.my_div').addClass('cui__bubble');
+$('.my_div').show();
+$('.my_div').addClass('cui__bubble--slideIn');
+$('.my_div').addClass('cui__bubble--fade');
+window.setTimeout(function (){$('.my_div').text('My name is Rishabh')}, 1500);
+
+//$('.my_div').delay("slow").fadeIn();
+
 
 
 $('#suggestion').slideDown( "slow" );
 
 }
 
-function keyMsg() {
-    var node = document.getElementById("question");
-node.addEventListener('keydown', function(event) {
-    if (event.key === "Enter") {
+function keyMsg(obj) {
+    if ($('#question').hasClass('cui__answers__placeholder'))
+    {
+        $('#question').removeClass('cui__answers__placeholder');
+}
+    
+
+
+    //alert(obj.keyCode);
+    if (obj.keyCode == 13) {
+        //alert('ghhh');
         addMsg();
+        $('#question').addClass('cui__answers__placeholder');
+        $('#question').text('');
+
     }
-});
 }
 
 
-$("#question").keyup(function (e) {
-    if (e.keyCode == 13) {
-        addMsg();
-    }
-});
+
+
 
 
 

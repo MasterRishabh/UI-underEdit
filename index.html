@@ -59,39 +59,7 @@
 	 crossorigin="anonymous"></script>
 
 
-	<style>
-		li.restored-item {
-			animation: openspace 0.3s ease forwards,
-			restored-item-animation 0.3s 0.3s cubic-bezier(0, 0.8, 0.32, 1.07) forwards;
-		}
-
-		/*
-    Snippet @keyframe openspace source: http://css-tricks.com/transitional-interfaces-coded/
-*/
-
-		@keyframes openspace {
-			to {
-				height: auto;
-			}
-		}
-
-		@keyframes restored-item-animation {
-			0% {
-				opacity: 0;
-				transform: translateY(600px) rotateZ(90deg);
-			}
-
-			10% {
-				opacity: 1;
-				transform: translateY(600px) rotateZ(90deg);
-			}
-
-			100% {
-				opacity: 1;
-				transform: rotateZ(0);
-			}
-		}
-	</style>
+	
 
 </head>
 
@@ -258,15 +226,15 @@
 
 							<ol id="m" class="cui__list">
 								<li class="cui__list__item">
-									<div class="cui__bubble cui__bubble--slideIn cui__bubble--fade">Hey, welcome to the knowledge !</div>
+									<div class="cui__bubble cui__bubble--slideIn cui__bubble--fade">Hey, welcome. Ask Us !</div>
 								</li>
 
 
 							</ol>
 							<div id="suggestion" class="cui__responses">
-								<div class="cui__bubble cui__bubble--response" style="transform: translate3d(0px, 0px, 0px); opacity: 1;" onclick="addMsg()">Suggestion 1</div>
-								<div class="cui__bubble cui__bubble--response" style="transform: translate3d(0px, 0px, 0px); opacity: 1;" onclick="addMsg()">Suggestion 2</div>
-								<div id="question" class="cui__bubble cui__bubble--response cui__answers__placeholder" contenteditable = "true" style="transform: translate3d(0px, 0px, 0px);" onkeyup="keyMsg()"></div>
+								<div class="cui__bubble cui__bubble--response" style="transform: translate3d(0px, 0px, 0px); opacity: 1;" onclick="addMsg()">What is insurance?</div>
+								<div class="cui__bubble cui__bubble--response" style="transform: translate3d(0px, 0px, 0px); opacity: 1;" onclick="addMsg()">What are the benefits of insurance?</div>
+								<div id="question" class="cui__bubble cui__bubble--response cui__answers__placeholder" contenteditable = "true" style="transform: translate3d(0px, 0px, 0px);" onkeyup="keyMsg(event)" ></div>
 							</div>
 
 
